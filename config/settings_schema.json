@@ -1,0 +1,42 @@
+[
+    {
+      "name": "Theme settings",
+      "settings": [
+        {
+          "type": "text",
+          "id": "shop_name",
+          "label": "Shop name",
+          "default": "My Shopify Store"
+        },
+        {
+          "type": "color",
+          "id": "background_color",
+          "label": "Background color",
+          "default": "#ffffff"
+        },
+        {
+          "type": "image_picker",
+          "id": "logo",
+          "label": "Logo"
+        }
+      ]
+    },
+    {
+      "name": "Homepage settings",
+      "settings": [
+        {
+          "type": "text",
+          "id": "homepage_title",
+          "label": "Homepage title",
+          "default": "Welcome to My Shopify Store"
+        },
+        {
+          "type": "textarea",
+          "id": "homepage_description",
+          "label": "Homepage description",
+          "default": "This is the description of the homepage."
+        }
+      ]
+    }
+  ]
+  
