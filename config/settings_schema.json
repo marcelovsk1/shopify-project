@@ -1,42 +1,63 @@
 [
-    {
-      "name": "Theme settings",
-      "settings": [
-        {
-          "type": "text",
-          "id": "shop_name",
-          "label": "Shop name",
-          "default": "My Shopify Store"
-        },
-        {
-          "type": "color",
-          "id": "background_color",
-          "label": "Background color",
-          "default": "#ffffff"
-        },
-        {
-          "type": "image_picker",
-          "id": "logo",
-          "label": "Logo"
-        }
-      ]
-    },
-    {
-      "name": "Homepage settings",
-      "settings": [
-        {
-          "type": "text",
-          "id": "homepage_title",
-          "label": "Homepage title",
-          "default": "Welcome to My Shopify Store"
-        },
-        {
-          "type": "textarea",
-          "id": "homepage_description",
-          "label": "Homepage description",
-          "default": "This is the description of the homepage."
-        }
-      ]
-    }
-  ]
-  
+  {
+    "name": "theme_info",
+    "theme_name": "Nike",
+    "theme_author": "Stephano",
+    "theme_version": "2.8.4",
+    "theme_documentation_url": "https://example.com/documentation",
+    "theme_support_url": "https://example.com/support"
+  },
+  {
+    "name": "Colors",
+    "settings": [
+      {
+        "type": "color",
+        "id": "bg",
+        "label": "Background color",
+        "default": "#ffffff"
+      }
+    ]
+  },
+  {
+    "name": "Typography",
+    "settings": [
+      {
+        "type": "range",
+        "id": "base_text_font_size",
+        "label": "Base size",
+        "info": "All texts, including headings, will scale accordingly.",
+        "min": 14,
+        "max": 20,
+        "unit": "px",
+        "default": 15
+      },
+      {
+        "type": "header",
+        "content": "Headings"
+      },
+      {
+        "type": "font_picker",
+        "id": "heading_font",
+        "label": "Font",
+        "default": "helvetica_n4"
+      },
+      {
+        "type": "header",
+        "content": "Body text"
+      },
+      {
+        "type": "font_picker",
+        "id": "text_font",
+        "label": "Font",
+        "default": "helvetica_n4"
+      },
+      {
+        "type": "checkbox",
+        "id": "underline_links",
+        "label": "Underline links",
+        "info": "Only applies to links defined in rich text fields.",
+        "default": false
+      }
+    ]
+  }
+]

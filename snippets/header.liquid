@@ -1,0 +1,37 @@
+<header class="header-nav">
+  <div>
+    {% comment %} <h1>{{ shop.name }}</h1> {% endcomment %}
+    <a href="/">
+      <img
+        width="80"
+        height="50"
+        loading="lazy"
+        src="{{ 'nike.png' | asset_url }}"
+      >
+    </a>
+  </div>
+
+  <div>
+    <ul class="middle-nav-links">
+      {% for link in linklists['main-menu'].links -%}
+        <li>{{ link.title | link_to: link.url }}</li>
+      {%- endfor %}
+    </ul>
+  </div>
+
+  <div class="right-nav-items">
+    <form action="/search">
+      <input class="search-nav" placeholder="search" type="search">
+    </form>
+
+    <a href="/cart">
+      <img
+        class="shopping-img"
+        width="40"
+        height="40"
+        loading="lazy"
+        src="{{ 'd.png' | asset_url }}"
+      >
+    </a>
+  </div>
+</header>

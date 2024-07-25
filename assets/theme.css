@@ -10,6 +10,7 @@ body {
     display: flex;
     justify-content: space-between;
     padding: 0, 30px, 0, 30px;
+    background-color: inherit;
  }
 
  .announcement-bar-left-section {
@@ -33,3 +34,107 @@ body {
     text-decoration: none;
     margin-right: 15px;
  }
+
+ /* header */
+
+ .shopping-img {
+    cursor: 'pointer';
+    margin-top: 10px;
+  }
+  .header-nav {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 1px;
+    background-color: white;
+    padding: 0 30px 0 30px;
+  }
+
+  .middle-nav-links {
+    display: flex;
+    font-size: 17px;
+    font-weight: bold;
+  }
+
+  .middle-nav-links li {
+    list-style-type: none;
+    padding: 10px;
+  }
+
+  .middle-nav-links li:hover {
+    text-decoration: underline;
+  }
+
+  .middle-nav-links a {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  .right-nav-items {
+    display: flex;
+    align-items: center;
+  }
+  .search-nav {
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 15px;
+    border: none;
+    background-color: #F4F4F4;
+  }
+
+  .notfound {
+    background-color: rgb(226, 226, 226);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Set the height to the full viewport height */
+  }
+
+  /* three images */
+
+  .three-images-wrapper {
+    display: flex;
+  }
+
+  .one {
+    background-image: url("{{ 'one.png' | asset_url }}");
+    width: 33.333%;
+    height: 500px;
+    background-size: cover;
+    background-position: center;
+  }
+  .one-user {
+    background-image: url("{{ section.settings.image | image_url }}");
+    width: 33.333%;
+    height: 500px;
+    background-size: cover;
+    background-position: center;
+  }
+  .two {
+    background-image: url("{{ 'two.png' | asset_url }}");
+    width: 33.333%;
+    height: 500px;
+    background-size: cover;
+    background-position: center;
+  }
+  .two-user {
+    background-image: url("{{ section.settings.image2 | image_url }}");
+    width: 33.333%;
+    height: 500px;
+    background-size: cover;
+    background-position: center;
+  }
+  .three {
+    background-image: url("{{ 'three.png' | asset_url }}");
+    width: 33.333%;
+    height: 500px;
+    background-size: cover;
+    background-position: center;
+  }
+  .three-user {
+    background-image: url("{{ section.settings.image3 | image_url }}");
+    width: 33.333%;
+    height: 500px;
+    background-size: cover;
+    background-position: center;
+  }
